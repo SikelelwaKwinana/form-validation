@@ -9,22 +9,23 @@
 </head>
 <body>
     <br>
-    <form action="https://formsubmit.co/sikelelwak@gmail.com" method="post">
+    <form action="https://formsubmit.co/sikelelwak@gmail.com" method="POST">
+        <input type="hidden" name="_url" value="https://https://formsubmit.co/contact.html">
         <fieldset>
             <legend>Registration Form</legend>
         <div> 
-            <label for="user-id">User id: </label>
+            <label>User id: <span class="required">*</span></label>
             <input type=”text” name="name" minlength=5 maxlength=12 required>
         </div>
 
        <div>
-            <label for="password">Password: </label>
+            <label >Password: <span class="required">*</span></label>
             <input type="password" name="password" min=7 max=12 required>
             
        </div>
        
         <div>
-            <label for="name">Name: </label>
+            <label>Name: <span class="required">*</span></label>
             <input type="text" name="name" id="name" required>
         </div>
        <div>
@@ -32,31 +33,33 @@
             <input type="address" name="address">
        </div>
        <div>
-        <label for="country">Country: </label>
+        <label>Country: <span class="required">*</span></label>
         <select name="country" id=" country">
             <option value="south-africa">South Africa</option>
             <option value="namibia">Namibia</option>
         </select>
    </div>
     <div>
-        <label for="zipcode">Zip Code: </label>
+        <label>Zip Code: <span class="required">*</span></label>
         <input type="number" name="zipcode" required>
    </div>
     <div>
-            <label for="email">Email: </label>
+            <label>Email: <span class="required">*</span></label>
             <input type="email" name="email" id="email" required>
     </div>
     <div class="check">
-        Sex:
+        
+        <label> Sex:<span class="required">*</span></label>
             <input type="radio" name="sex" id="male" required><label for="male">Male </label>
             <input type="radio" name="sex" id="female" required><label for="female">Female </label>
     </div>
     <div class="check">
-        Language:
-            <input type="checkbox" name="language" id="english" checked required><label for="english">English </label>
-            <input type="checkbox" name="Language" id="non-english" checked required><label for="non-eglish">Non English </label>  
+       
+        <label> Language: <span class="required">*</span></label>
+            <input type="radio" name="language" id="english"  required><label for="english">English </label>
+            <input type="radio" name="language" id="non english" required><label for="non english">Non English </label>  
    </div>
-   <div>
+   <div class="mess">
         <label for="about">About: </label>
         <div>
             <textarea name="about" id="about" cols="50" rows="10"></textarea>
